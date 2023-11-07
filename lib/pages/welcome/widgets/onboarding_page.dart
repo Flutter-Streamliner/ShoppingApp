@@ -3,19 +3,19 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnboardingPage extends StatelessWidget {
 
-  int index;
-  String imagePath;
-  String title;
-  String subtitle;
-  String buttonName;
+  final int index;
+  final String imagePath;
+  final String title;
+  final String subtitle;
+  final String buttonName;
 
   const OnboardingPage({
     Key? key,
     required this.index,
-    required String imagePath,
-    required String title,
-    required String subtitle,
-    required String buttonName,
+    required this.imagePath,
+    required this.title,
+    required this.subtitle,
+    required this.buttonName,
   }) : super(key: key);
 
   @override
