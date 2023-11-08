@@ -2,6 +2,8 @@ import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shop_app/app_routes.dart';
+import 'package:shop_app/pages/singin/signin_page.dart';
 import 'package:shop_app/pages/welcome/bloc/welcome_bloc.dart';
 import 'package:shop_app/pages/welcome/widgets/onboarding_page.dart';
 
@@ -58,7 +60,7 @@ class _WelcomeState extends State<WelcomePage> {
                         title: 'Always Fascinated Learning',
                         subtitle: 'Anywhere, anytime. The time is at our description so study whenever you want',
                         buttonName: 'Get Started',
-                        onPressed: (){},
+                        onPressed: () => Navigator.pushNamedAndRemoveUntil(context, AppRoutes.signInPage, (route) => false),
                       ),
                     ],
                   ),
