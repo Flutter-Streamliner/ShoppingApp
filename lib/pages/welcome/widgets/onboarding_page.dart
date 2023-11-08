@@ -27,14 +27,12 @@ class OnboardingPage extends StatelessWidget {
           height: 345.h,
           child: const Text('Image 1'),
         ),
-        Container(
-          child: Text(
-            title,
-            style: TextStyle(
-                color: Colors.black,
-                fontSize: 24.sp,
-                fontWeight: FontWeight.normal
-            ),
+        Text(
+          title,
+          style: TextStyle(
+              color: Colors.black,
+              fontSize: 24.sp,
+              fontWeight: FontWeight.normal
           ),
         ),
         Container(
