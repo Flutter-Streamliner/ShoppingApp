@@ -14,7 +14,7 @@ class WelcomePage extends StatefulWidget {
 
 class _WelcomeState extends State<WelcomePage> {
 
-  PageController pageController = PageController();
+  final PageController _pageController = PageController(initialPage: 0);
 
   void _updatePageIndex({required int index}) =>
       context.read<WelcomeBloc>().add(UpdateWelcomePageEvent(page: index));
@@ -33,28 +33,32 @@ class _WelcomeState extends State<WelcomePage> {
                 alignment: Alignment.topCenter,
                 children: [
                   PageView(
+                    controller: _pageController,
                     onPageChanged: (index) => _updatePageIndex(index: index),
-                    children: const [
+                    children: [
                       OnboardingPage(
                         index: 1,
-                        imagePath: '',
+                        imagePath: 'assets/images/reading.png',
                         title: 'First See Learning',
                         subtitle: 'Forget about a for of paper all knowledge in one learning!',
                         buttonName: 'Next',
+                        onPressed: () => _pageController.animateToPage(1, duration: const Duration(milliseconds: 500), curve: Curves.easeIn),
                       ),
                       OnboardingPage(
                         index: 2,
-                        imagePath: '',
+                        imagePath: 'assets/images/boy.png',
                         title: 'Connect With Everyone',
                         subtitle: 'Always keep in touch with your tutor & friend. Let\'s get connected',
                         buttonName: 'Next',
+                        onPressed: () => _pageController.animateToPage(2, duration: const Duration(milliseconds: 500), curve: Curves.easeIn),
                       ),
                       OnboardingPage(
                         index: 3,
-                        imagePath: '',
+                        imagePath: 'assets/images/man.png',
                         title: 'Always Fascinated Learning',
                         subtitle: 'Anywhere, anytime. The time is at our description so study whenever you want',
                         buttonName: 'Get Started',
+                        onPressed: (){},
                       ),
                     ],
                   ),
