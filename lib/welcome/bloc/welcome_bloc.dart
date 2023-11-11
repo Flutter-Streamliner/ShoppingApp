@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part 'package:shop_app/pages/welcome/bloc/welcome_events.dart';
-part 'package:shop_app/pages/welcome/bloc/welcome_states.dart';
+part 'package:shop_app/welcome/bloc/welcome_events.dart';
+part 'package:shop_app/welcome/bloc/welcome_states.dart';
 
 class WelcomeBloc extends Bloc<WelcomeEvent, WelcomeState> {
   WelcomeBloc(): super(const WelcomeState()) {
