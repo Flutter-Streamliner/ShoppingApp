@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shop_app/singin/widgets/description_text.dart';
 import 'package:shop_app/singin/widgets/input_field.dart';
 import 'package:shop_app/singin/widgets/link_widget.dart';
+import 'package:shop_app/singin/widgets/signin_button.dart';
 import 'package:shop_app/singin/widgets/sing_in_app_bar.dart';
 import 'package:shop_app/singin/widgets/social_signin_widget.dart';
 
@@ -41,8 +42,11 @@ class SignInPage extends StatelessWidget {
                       hintText: "Enter your password",
                       isObscureText: true,
                     ),
-                    SizedBox(height: 20),
+                    SizedBox(height: 40),
                     LinkWidget(),
+                    SignInButton(title: 'Sign In'),
+                    SizedBox(height: 20),
+                    SignInButton(title: 'Sign Up'),
                   ],
                 ),
               )
