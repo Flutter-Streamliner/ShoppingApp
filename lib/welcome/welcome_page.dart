@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shop_app/app_routes.dart';
+import 'package:shop_app/const/colors.dart';
 import 'package:shop_app/welcome/bloc/welcome_bloc.dart';
 import 'package:shop_app/welcome/widgets/onboarding_page.dart';
 
@@ -70,10 +71,10 @@ class _WelcomeState extends State<WelcomePage> {
                       position: state.page,
                       mainAxisAlignment: MainAxisAlignment.center,
                       decorator: DotsDecorator(
-                        color: Colors.grey,
-                        activeColor: Colors.blue,
+                        color: AppColors.primaryThirdElementText,
+                        activeColor: AppColors.primaryElement,
                         size: const Size.square(8.0),
-                        activeSize: const Size(10.0, 8.0),
+                        activeSize: const Size(18.0, 8.0),
                         activeShape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         )

@@ -12,6 +12,7 @@ class SocialSignInWidget extends StatelessWidget {
         top: 40.h,
         bottom: 20.h,
       ),
+      padding: EdgeInsets.symmetric(horizontal: 25.w),
       child: const Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shop_app/const/colors.dart';
 
 class OnboardingPage extends StatelessWidget {
 
@@ -35,7 +36,7 @@ class OnboardingPage extends StatelessWidget {
         Text(
           title,
           style: TextStyle(
-              color: Colors.black,
+              color: AppColors.primaryText,
               fontSize: 24.sp,
               fontWeight: FontWeight.normal
           ),
@@ -46,7 +47,7 @@ class OnboardingPage extends StatelessWidget {
           child: Text(
             subtitle,
             style: TextStyle(
-                color: Colors.black.withOpacity(0.5),
+                color: AppColors.primarySecondaryElementText,
                 fontSize: 14.sp,
                 fontWeight: FontWeight.normal
             ),
@@ -59,7 +60,7 @@ class OnboardingPage extends StatelessWidget {
             width: 325.w,
             height: 50.h,
             decoration: BoxDecoration(
-                color: Colors.blue,
+                color: AppColors.primaryElement,
                 borderRadius: BorderRadius.all(Radius.circular(15.w)),
                 boxShadow: [
                   BoxShadow(

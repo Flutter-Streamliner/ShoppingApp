@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shop_app/const/colors.dart';
 
 class LinkWidget extends StatelessWidget {
   const LinkWidget({Key? key}) : super(key: key);
@@ -16,9 +17,9 @@ class LinkWidget extends StatelessWidget {
         child: Text(
           'Forgot Password',
           style: TextStyle(
-            color: Colors.black,
+            color: AppColors.primaryText,
             decoration: TextDecoration.underline,
-            decorationColor: Colors.blue,
+            decorationColor: AppColors.primaryText,
             fontSize: 12.sp,
           ),
         ),

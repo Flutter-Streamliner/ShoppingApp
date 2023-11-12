@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shop_app/const/colors.dart';
 
 class InputField extends StatelessWidget {
 
@@ -22,7 +23,7 @@ class InputField extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.all(Radius.circular(15.w)),
-        border: Border.all(color: Colors.black)
+        border: Border.all(color: AppColors.primaryFourthElementText)
       ),
       child: Row(
         children: [
@@ -59,12 +60,12 @@ class InputField extends StatelessWidget {
                       color: Colors.transparent,
                     )
                 ),
-                hintStyle: TextStyle(
-                  color: Colors.grey.withOpacity(0.5),
+                hintStyle: const TextStyle(
+                  color: AppColors.primarySecondaryElementText,
                 ),
               ),
               style: TextStyle(
-                color: Colors.black,
+                color: AppColors.primaryText,
                 fontFamily: "Avenir",
                 fontWeight: FontWeight.normal,
                 fontSize: 14.sp,

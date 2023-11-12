@@ -46,7 +46,10 @@ class SignInPage extends StatelessWidget {
                     LinkWidget(),
                     SignInButton(title: 'Sign In'),
                     SizedBox(height: 20),
-                    SignInButton(title: 'Sign Up'),
+                    SignInButton(
+                      title: 'Sign Up',
+                      isAccent: true,
+                    ),
                   ],
                 ),
               )

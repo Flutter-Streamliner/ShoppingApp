@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shop_app/const/colors.dart';
 
 class SignInButton extends StatelessWidget {
 
   final String title;
   final Function()? onPressed;
+  final bool isAccent;
 
   const SignInButton({
     Key? key,
     required this.title,
     this.onPressed,
+    this.isAccent = false,
   }) : super(key: key);
 
   @override
@@ -20,8 +23,11 @@ class SignInButton extends StatelessWidget {
         width: 325.w,
         height: 50.h,
         decoration: BoxDecoration(
-          color: Colors.blue,
+          color: isAccent ? AppColors.primaryBackground : AppColors.primaryElement,
           borderRadius: BorderRadius.circular(15.w),
+          border: Border.all(
+              color: isAccent ? AppColors.primaryFourthElementText : AppColors.transparent
+          ),
           boxShadow: [
             BoxShadow(
               spreadRadius: 1,
@@ -37,7 +43,7 @@ class SignInButton extends StatelessWidget {
             style: TextStyle(
               fontSize: 16.sp,
               fontWeight: FontWeight.normal,
-              color: Colors.white,
+              color: isAccent ? AppColors.primaryText : AppColors.primaryBackground,
             ),
           ),
         ),
