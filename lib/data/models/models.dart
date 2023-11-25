@@ -10,4 +10,6 @@ export 'msgcontent.dart';
 export 'message.dart';
 export 'chat.dart';
 export 'chatcall.dart';
+export 'result.dart';
+export 'failure.dart';
 

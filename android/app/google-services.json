@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "295231099271",
+    "project_id": "flutter-course-shop-app-104d5",
+    "storage_bucket": "flutter-course-shop-app-104d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295231099271:android:6e289c1823bd38287f4322",
+        "android_client_info": {
+          "package_name": "com.streamliner.shop_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPkLgcy0gcTrVZNAFZ6JFWIIavpDeYv6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
